@@ -3,7 +3,7 @@ import os
 from dotenv import load_dotenv
 import logging
 
-
+print(os.getenv("VERIFY_TOKEN"))
 def load_configurations(app):
     load_dotenv()
     app.config["ACCESS_TOKEN"] = os.getenv("ACCESS_TOKEN")
